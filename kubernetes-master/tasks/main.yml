@@ -16,6 +16,10 @@
 #     label: "{{ item }}"
 #   when: ansible_distribution == "Ubuntu"
 
+- name: Show OS distribution
+  debug:
+    msg: "{{ ansible_distribution }}"
+
 - name: Check the distribution then call relevant containerd tasks
   include_tasks: containerd.yaml
   # loop: "{{ kubernetes_master.launch_ip }}"
