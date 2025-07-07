@@ -20,9 +20,9 @@
   debug:
     var: ansible_distribution
 
-- name: Check the distribution then call relevant containerd tasks
-  include_tasks: containerd.yaml
-  when: ansible_distribution == "Ubuntu"
+# - name: Check the distribution then call relevant containerd tasks
+#   include_tasks: containerd.yaml
+#   when: ansible_distribution == "Ubuntu"
 
 
 
