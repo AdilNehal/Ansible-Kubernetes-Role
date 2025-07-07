@@ -8,7 +8,6 @@
   #     # ...
   roles:
     - role: kubernetes-master
-      # when: not skipped
 
 #- name: Root Playbook calling worker node ROLE
 #  hosts: ubuntu-worker
