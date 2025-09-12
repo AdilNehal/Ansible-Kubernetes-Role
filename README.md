@@ -1,8 +1,11 @@
-$ssh-keygen
+```
+# Run in Bash
 
-$echo password > password.txt
+ssh-keygen
 
-$for user in ansible root
+echo password > password.txt
+
+for user in ansible root
 do
 	for os in ubuntu centos
 	do
@@ -12,3 +15,4 @@ do
 		done
 	done
 done
+```
